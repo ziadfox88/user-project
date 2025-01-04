@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome{% endblock title %}
+
+{% block content %} 
+    <h1> Welcome {{new_user.first_name}} </h1>
+    <p> You have successfully registered. </p>
+    <p> You can now <a href="{% url "login" %}">login</a> </p>
+{% endblock content %}

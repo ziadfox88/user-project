@@ -1,0 +1,12 @@
+{% comment %} {% extends "layout.html" %}
+
+{% block title %}Login{% endblock title %}
+
+{% block content %}
+    <h2>Login Page </h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p> <input type="submit" value="Login"> </p>
+    </form>
+{% endblock content %} {% endcomment %}
